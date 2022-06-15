@@ -191,28 +191,5 @@ public class icdr {
         img.save(res+name+"_fin.jpg", new JpegOptions());
         img.close();
     }
-        String folder = "AdvFinal/";
-        Image img1 = Image.load(path);
-        img1.save(tmp+"tmp.png", new PngOptions());
-        img1.close();
-        com.aspose.imaging.RasterImage img = (com.aspose.imaging.RasterImage) Image.load(tmp+"tmp.png");
-        if(img.getWidth() * img.getHeight() > 10000000){
-            throw new RuntimeException("out of bounds image!");
-        }
-        Random rd = new Random();
-        int w = img.getWidth();
-        int h = img.getHeight();
-        for(int i = 0; i < 5; i++){
-            double scale = rd.nextDouble() * 0.05 + 0.95;
-            img.resize((int)(w * scale), (int)(h* scale));
-            scale = rd.nextDouble() * 0.05 + 1;
-            img.resize((int)(w * scale), (int)(h* scale));
-        }
-        img.resize(w, h);
-        img.filter(img.getBounds(), new com.aspose.imaging.imagefilters.filteroptions.GaussianBlurFilterOptions());
-        img.filter(img.getBounds(), new com.aspose.imaging.imagefilters.filteroptions.SharpenFilterOptions());
-        img.save(res+folder+name+"_fin.png", new PngOptions());
-        img.close();
-    }
 
 }
