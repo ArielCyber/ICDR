@@ -9,7 +9,7 @@ To run the files and scripts you must have access to the Aspose.imaging library 
 ## Files
 icdr.java: contains the code tested for disarming potentialy malicious image files.
 * transCode(): creates a new image file with the same image but with no metadata.
-* clean(): edit by a random value the 3 least significant bytes of the every pixel of the image.
+* clean(): edit by a random value, the 3 least significant bytes of the every pixel of the image.
 * resize(): compress the image to a 0.97 size of the original and back to the original size.
 * alpha(): applies the function of x^(1/1.015) on the image, x being a pixel value of the image.
 * AdvFilter(): applies the filters Gaussian Blur followed by Sharpen Filter.
