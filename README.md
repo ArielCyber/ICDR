@@ -21,4 +21,4 @@ vt_ider.py: used to upload hashes of files to VirusTotal and generate a csv file
 
 vt_analyse.py: reads the .csv file generated from vt_ider.py and queries the results from VirusTotal as a .csv file.
 
-## Resultes
+## Results
