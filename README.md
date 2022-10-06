@@ -11,7 +11,7 @@ icdr.java: contains the code tested for disarming potentialy malicious image fil
 * transCode(): creates a new image file with the same image but with no metadata.
 * clean(): edit by a random value, the 3 least significant bytes of the every pixel of the image.
 * resize(): compress the image to a 0.97 size of the original and back to the original size.
-* alpha(): applies the function of x^(1/1.015) on the image, x being a pixel value of the image.
+* alpha(): applies the function of x^(1/1.015) on the image, x being a pixel value of the image. Based on [ImageDetox](https://www.mdpi.com/2073-8994/12/10/1621).
 * AdvFilter(): applies the filters Gaussian Blur followed by Sharpen Filter.
 * final_fun(): the optimal ICDR function resulted from the tests. the function applies the functions of transCode(), resize() and AdvFilter() on the image file.
 
@@ -33,6 +33,7 @@ The steganographic tools used for testing are: [OpenStego](https://github.com/sy
 ![3](/assets/images/res.PNG)
 
 ### Threat composition of VirusTotal dataset
+compostion brought by [MalJpeg](https://ieeexplore.ieee.org/document/8967109)
 
 ![4](/assets/images/threats_cmp.PNG)
 
