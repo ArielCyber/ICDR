@@ -26,14 +26,13 @@ ICDR was tested on a dataset of JPEGs with membedded malware from VirusTotal and
 
 The steganographic tools used for testing are: [OpenStego](https://github.com/syvaidya/openstego), [DCT-Image-Steganography](https://github.com/MasonEdgar/DCT-Image-Steganography), and a modified [LsbSteg](https://github.com/adrg/lsbsteg) that embed data in the 3 most significant bits of a pixel.
 
-![1](/assets/images/vt-res.PNG)
+![1](/assets/images/quality_test.PNG)
 
-![2](/assets/images/opensteg-res.PNG)
+![2](/assets/images/filters.PNG)
 
-![3](/assets/images/dct-res.PNG)
+![3](/assets/images/res.PNG)
 
-![4](/assets/images/msb-res.PNG)
+### Threat composition of VirusTotal dataset
 
-![5](/assets/images/anti-resize.PNG)
+![4](/assets/images/threat_cmp.PNG)
 
-![6](/assets/images/quality-res.PNG)
