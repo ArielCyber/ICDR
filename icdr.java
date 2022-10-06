@@ -181,7 +181,7 @@ public class icdr {
         if(img.getWidth() * img.getHeight() > 30000000){
             throw new RuntimeException("out of bounds image!");
         }
-        float scale = 0.95f;
+        float scale = 0.97f;
         int w = img.getWidth();
         int h = img.getHeight();
         img.resize((int)(w * scale), (int)(h* scale));
