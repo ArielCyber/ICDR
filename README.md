@@ -22,7 +22,7 @@ vt_ider.py: used to upload hashes of files to VirusTotal and generate a csv file
 vt_analyse.py: reads the .csv file generated from vt_ider.py and queries the results from VirusTotal as a .csv file.
 
 ## Results
-ICDR was tested on a dataset of JPEGs with membedded malware from VirusTotal and benign images that were used as a cover image for steganography from [Kaggle](https://www.kaggle.com/datasets/prasunroy/natural-images), along with [naive anti resize steganography](https://github.com/eloblo/naive-anti-resize-steganography).
+ICDR was tested on a dataset of JPEGs with membedded malware from VirusTotal and benign images that were used as a cover images for steganography from [Kaggle](https://www.kaggle.com/datasets/prasunroy/natural-images), along with [naive anti resize steganography](https://github.com/eloblo/naive-anti-resize-steganography).
 
 The steganographic tools used for testing are: [OpenStego](https://github.com/syvaidya/openstego), [DCT-Image-Steganography](https://github.com/MasonEdgar/DCT-Image-Steganography), and a modified [LsbSteg](https://github.com/adrg/lsbsteg) that embed data in the 3 most significant bits of a pixel.
 
