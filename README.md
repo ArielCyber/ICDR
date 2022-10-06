@@ -34,5 +34,5 @@ The steganographic tools used for testing are: [OpenStego](https://github.com/sy
 
 ### Threat composition of VirusTotal dataset
 
-![4](/assets/images/threat_cmp.PNG)
+![4](/assets/images/threats_cmp.PNG)
 
