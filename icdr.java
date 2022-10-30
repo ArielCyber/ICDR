@@ -51,9 +51,12 @@ public class icdr {
     }
 
     public static void transCode(String path, String name){
-        Image img = Image.load(path);
-        img.save(res+name+"_trn.jpg", new JpegOptions());
-        img.close();
+        Image img1 = Image.load(path);
+        img1.save(tmp+"tmp.png", new PngOptions());
+        img1.close();
+        Image img2 = Image.load(tmp+"tmp.png");
+        img2.save(res+name+"_trn.jpg", new JpegOptions());
+        img2.close();
     }
 
     public static void clean(String path, String name){
